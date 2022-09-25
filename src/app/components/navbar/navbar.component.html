@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="['/home']" routerLinkActive="router-link-active">
+          <i class="fas fa-film"></i>
+          MOVIES
+        </a>
+        <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul> -->
+            <div class="d-flex">
+                <input
+                    #txtBuscar
+                    (keyup)="buscarPelicula(txtBuscar.value)"
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Buscar película"
+                    aria-label="Buscar"
+                >
+                <button (click)="buscarPelicula(txtBuscar.value)" class="btn btn-outline-success" type="submit">Buscar</button>
+            </div>
+        </div>
+    <!-- </div> -->
+</nav>
